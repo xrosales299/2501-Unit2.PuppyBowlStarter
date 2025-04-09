@@ -15,12 +15,8 @@
  * @returns {Object[]} the array of player objects
  */
 const fetchAllPlayers = async () => {
-  try {
-    // TODO
-    
-  } catch (err) {
-    console.error("Uh oh, trouble fetching players!", err);
-  }
+  //TODO
+
 };
 
 /**
@@ -30,27 +26,22 @@ const fetchAllPlayers = async () => {
  * @returns {Object} the player object
  */
 const fetchSinglePlayer = async (playerId) => {
-  try {
-    // TODO
-    
-  } catch (err) {
-    console.error(`Oh no, trouble fetching player #${playerId}!`, err);
-  }
+  //TODO
 };
 
 /**
  * Adds a new player to the roster via the API.
- * Once a player is added to the roster, the new player
+ * Once a player is added to the database, the new player
  * should appear in the all players page without having to refresh
  * @param {Object} newPlayer the player to add
  */
 /* Note: we need data from our user to be able to add a new player
- * Do we have anything to help us with that currently...? 
+ * Do we have a way to do that currently...? 
 */
 /**
  * Note#2: addNewPlayer() expects you to pass in a
  * new player object when you call it. How can we
- * create a new player pbject and then pass it to addNewPlayer()?
+ * create a new player object and then pass it to addNewPlayer()?
  */
 /**
  * FOR TESTING PURPOSES ONLY PLEASE OBSERVE THIS SECTION
@@ -58,12 +49,7 @@ const fetchSinglePlayer = async (playerId) => {
  */
 
 const addNewPlayer = async (newPlayer) => {
-  try {
-    // TODO
-    
-  } catch (err) {
-    console.error("Oops, something went wrong with adding that player!", err);
-  }
+  //TODO
 };
 
 /**
@@ -76,25 +62,21 @@ const addNewPlayer = async (newPlayer) => {
  * Note: In order to call removePlayer() some information is required.
  * Unless we get that information, we cannot call removePlayer()....
  */
+/**
+ * Note#2: Don't be afraid to add parameters to this function if you need to!
+ */
 
 const removePlayer = async (playerId) => {
-  try {
-    // TODO
-    
-  } catch (err) {
-    console.error(
-      `Whoops, trouble removing player #${playerId} from the roster!`,
-      err
-    );
-  }
+  //TODO
+
 };
 
 /**
- * Updates `<main>` to display a list of all players.
+ * Updates html to display a list of all players or a single player page.
  *
  * If there are no players, a corresponding message is displayed instead.
  *
- * Each player is displayed with the following information:
+ * Each player in the all player list is displayed with the following information:
  * - name
  * - id
  * - image (with alt text of the player's name)
@@ -114,7 +96,7 @@ const render = () => {
 };
 
 /**
- * Updates `<main>` to display a single player.
+ * Updates html to display a single player.
  * A detailed page about the player is displayed with the following information:
  * - name
  * - id
