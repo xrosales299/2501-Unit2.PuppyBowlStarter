@@ -9,6 +9,7 @@
 let playerList = []
 const allPlayersDiv = document.querySelector("#allPlayers")
 const PlayersImage = document.getElementById("dogimage")
+const PlayersName = document.getElementById("PlayersName")
 /**
  * Fetches all players from the API.
  * This function should not be doing any rendering
@@ -32,6 +33,10 @@ const PlayersImage = document.getElementById("dogimage")
  * @returns {Object} the player object
  */
 const fetchSinglePlayer = async (singleDog) => {
+  const html2 = playerList.players.map((playerid) => {
+    console.log(playerid)
+    return 
+  })
 
 };
 
@@ -83,11 +88,11 @@ const render = () => {
       console.log(player)
       return `
         <div>
-          <h2>${player.name}</h2>
+          <h2>${player.id}</h2>
           <p>
-              ${player.breed}
+              Their name is ${player.name}
           </p>
-          <p>${player.id}</p>
+          <p>They are a ${player.breed}</p>
         </div>
     `
   })
